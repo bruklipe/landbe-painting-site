@@ -1118,10 +1118,9 @@ body[data-page="projects"] .site-header {
 
 @media (max-width: 760px) {
   .hero {
-    padding-top: 12rem;
+    padding-top: 10.75rem;
   }
 
-  .hero__stats,
   .gallery-preview--featured,
   .gallery-grid--projects,
   .category-grid,
@@ -1135,17 +1134,92 @@ body[data-page="projects"] .site-header {
   }
 
   .topbar__inner {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.65rem 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 0.35rem 0.75rem;
+    min-height: auto;
+    padding: 0.55rem 0;
+  }
+
+  .topbar__link {
+    font-size: 0.76rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .topbar__link:first-child {
+    justify-self: start;
+  }
+
+  .topbar__link:last-child {
+    justify-self: end;
+    max-width: 100%;
+    text-align: right;
+  }
+
+  .topbar__meta {
+    display: none;
   }
 
   .brand__logo {
     width: 116px;
   }
 
+  .site-header__inner {
+    min-height: 4.85rem;
+  }
+
+  .hero__layout {
+    gap: 1.35rem;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(2.35rem, 10vw, 3.5rem);
+  }
+
+  .hero__lead {
+    font-size: 0.98rem;
+    line-height: 1.68;
+  }
+
+  .hero__actions {
+    margin-top: 1.5rem;
+  }
+
+  .hero__pills {
+    gap: 0.55rem;
+    margin-top: 1.3rem;
+  }
+
+  .pill {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .hero__stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .stat-card {
+    padding: 0.9rem 0.75rem;
+  }
+
+  .stat-card strong {
+    font-size: 1.15rem;
+  }
+
+  .stat-card span {
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
   .hero__media {
-    min-height: 500px;
+    min-height: 470px;
   }
 
   .hero-shot--main {
@@ -1178,6 +1252,10 @@ body[data-page="projects"] .site-header {
 }
 
 @media (max-width: 560px) {
+  .hero {
+    padding-top: 10.2rem;
+  }
+
   .hero h1,
   .page-hero h1,
   .section-heading h2,
@@ -1187,7 +1265,7 @@ body[data-page="projects"] .site-header {
   }
 
   .hero__media {
-    min-height: 430px;
+    min-height: 410px;
   }
 
   .hero-shot--main {
@@ -1200,6 +1278,31 @@ body[data-page="projects"] .site-header {
 
   .hero-shot--tertiary {
     width: 52%;
+  }
+
+  .topbar__inner {
+    gap: 0.3rem 0.65rem;
+    padding: 0.5rem 0;
+  }
+
+  .topbar__link {
+    font-size: 0.72rem;
+  }
+
+  .hero__stats {
+    gap: 0.55rem;
+  }
+
+  .stat-card {
+    padding: 0.8rem 0.6rem;
+  }
+
+  .stat-card strong {
+    font-size: 1.02rem;
+  }
+
+  .stat-card span {
+    font-size: 0.72rem;
   }
 
   .section,
