@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://landbepainting.com/sitemap.xml
