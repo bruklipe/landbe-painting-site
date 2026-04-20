@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title>L &amp; BE Painting Co.</title>
+  <rect width="64" height="64" rx="18" fill="#09111f" />
+  <path
+    d="M15 45h8V24h-8v21Zm11 0h7V18h-7v27Zm10 0h7V12h-7v33Zm10 0h3V28l-3-1v18Z"
+    fill="#fff"
+  />
+  <path d="M13 47h38" stroke="#d8c4a3" stroke-width="2.4" stroke-linecap="round" />
+</svg>
